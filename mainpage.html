@@ -1,0 +1,116 @@
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&family=Merriweather&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>MY Notes</title>
+    <style>
+        .container{
+            margin-top: 80px;
+        }
+        #notepad,#allnotes,#done{
+            display: none;
+        }
+        .buttons{
+            margin-bottom: 20px;
+        }
+        textarea{
+            width: 100%;
+            max-width: 100%;
+            font-size: 16px;
+            line-height: 1.5em;
+            border-left-width: 20px;
+            border-color: rgba(170, 50, 245, 0.94);
+            background-color: rgba(231, 207, 255, 0.88);
+            color: #744393;
+            padding: 10px;
+        }
+      </style>
+  </head>
+  <body>
+   
+      <!--  Navigation bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-warning">
+  <a class="navbar-brand" href="#" style="font-weight: bold;margin-right: 70px;">Online Notes</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="material-icons" style="font-size:30px;color:black;opacity: 0.5;">
+apps
+</span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item">
+        <a class="nav-link text-success" href="#">Profile <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link text-info" href="#">Help</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link text-info" href="#">contact-us</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">My-notes</a>
+      </li>
+    </ul>
+   
+         <ul class="navbar-nav list-group list-group-horizontal ">
+        <li class="nav-item list-group-item " style="background-color: transparent;">
+            <a class="text-success" href="" style="text-decoration: none;">Logged in as <b>Username</b></a>
+        </li>
+        
+        <li class="nav-item list-group-item " style="margin-left: auto;background-color: transparent">
+             <button type="button" 
+             class="btn btn-outline-success float-right" style="font-weight: 700;"  >Log out</button>
+             </li>
+    </ul>   
+     </div>
+</nav> 
+
+<!--Container -->
+<div class="container">
+    <div class="row">
+  <div class="offset-md-3 col-md-6">
+      <div class="buttons">
+            <button type="button" id="addnote" class="btn btn-info btn-lg">Add Notes</button>
+          
+            <button type="button" id="edit" class="btn btn-info btn-lg float-right">Edit</button>
+            
+            <button type="button" id="Done" class="btn btn-success btn-lg float-right">Done</button>
+              
+            <button type="button" id="allnotes" class="btn btn-info btn-lg">All Notes</button>
+      </div>
+     
+          <div id="notepad">
+              <textarea rows="10">
+              </textarea>
+          </div>
+          
+          <div id="notes" class="notes">
+<!--              Ajax call to php file to retrive notes from database-->
+          </div>
+      
+  </div>
+</div>
+</div>
+
+
+   
+<!--   footer-->
+   <div class="container-fluid text-center footer bg-warning text-white">
+  <p>Devloped by-Jatin Vishwakarma Copyright&copy; 2020-2021</p>
+</div>
+   
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>
